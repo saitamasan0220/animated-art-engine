@@ -1,0 +1,28 @@
+{
+  "dna": "799a0fe120df1f99e04707cea97bab55273cdcac485c733d6a9d2ff1f18ddfff",
+  "name": "Baptized #3",
+  "description": "Your description here",
+  "image": "ipfs://NewUriToReplace/3.gif",
+  "imageName": "3.gif",
+  "edition": 3,
+  "date": 1680889784885,
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "Envato"
+    },
+    {
+      "trait_type": "Bible",
+      "value": "Joseph"
+    },
+    {
+      "trait_type": "Cross",
+      "value": "Peace"
+    },
+    {
+      "trait_type": "Verse",
+      "value": "Ephesians 2_8"
+    }
+  ],
+  "compiler": "Jalagar Animated Art Engine"
+}

@@ -1,0 +1,28 @@
+{
+  "dna": "ff0b50bff0f42b8acb203bc873e75c54f22d933dac5ec4d2d0f64b4c2a50adfd",
+  "name": "Baptized #9",
+  "description": "Your description here",
+  "image": "ipfs://NewUriToReplace/9.gif",
+  "imageName": "9.gif",
+  "edition": 9,
+  "date": 1680889788863,
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "Envato"
+    },
+    {
+      "trait_type": "Bible",
+      "value": "Simeon"
+    },
+    {
+      "trait_type": "Cross",
+      "value": "Kindness"
+    },
+    {
+      "trait_type": "Verse",
+      "value": "1 Corinthians 15_22"
+    }
+  ],
+  "compiler": "Jalagar Animated Art Engine"
+}

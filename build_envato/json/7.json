@@ -1,0 +1,28 @@
+{
+  "dna": "5897b95c8800bfd3387e8e6aacf15a04b27828c849f88c61f952cd764e976f2d",
+  "name": "Baptized #7",
+  "description": "Your description here",
+  "image": "ipfs://NewUriToReplace/7.gif",
+  "imageName": "7.gif",
+  "edition": 7,
+  "date": 1680889787578,
+  "attributes": [
+    {
+      "trait_type": "Background",
+      "value": "Envato"
+    },
+    {
+      "trait_type": "Bible",
+      "value": "Naphtali"
+    },
+    {
+      "trait_type": "Cross",
+      "value": "Faith"
+    },
+    {
+      "trait_type": "Verse",
+      "value": "1 Corinthians 15_22"
+    }
+  ],
+  "compiler": "Jalagar Animated Art Engine"
+}
