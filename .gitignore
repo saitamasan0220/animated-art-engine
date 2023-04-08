@@ -7,6 +7,9 @@ build/
 ._*
 ~
 layers/Background
+layers/Anointed Background
+layers/Anointed Bible
+layers/Anointed Verse
 
 # NODE GITIGNORE: https://github.com/github/gitignore/blob/main/Node.gitignore
 # Logs

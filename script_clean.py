@@ -15,5 +15,12 @@ for item in glob.iglob(pattern, recursive=True):
     os.remove(item)
     # print(item)
 
+pattern = r"./build/**/.DS_Store"
+
+for item in glob.iglob(pattern, recursive=True):
+    print("Deleting: ", item)
+    os.remove(item)
+    # print(item)
+
 # Uncomment the below code check the remaining files
 # print(glob.glob(r"E:\demos\files_demos\reports\**\*.*", recursive=True))
