@@ -310,13 +310,13 @@ const addMetadata = (_dna, _edition, _prefixData, attributesList) => {
     }, []);
 
     let tempMetadata = {
-        dna: hash(_dna),
+        // dna: hash(_dna),
         name: `${_prefix ? _prefix + " " : ""}#${_edition - _offset}`,
         description: description,
         image: `${baseUri}/${_edition}.${outputType}`,
         imageName: `${_edition}.${outputType}`, // Used by the provenance hash
         edition: _edition,
-        date: dateTime,
+        // date: dateTime,
         ...extraMetadata,
         attributes: cleanedAttrs,
         // compiler: "Jalagar Animated Art Engine",

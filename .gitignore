@@ -1,7 +1,8 @@
 # Generative animated Engine specific git ignore
 .DS_Store
 temp/
-output/
+# output/
+images/
 build/
 ._*
 ~

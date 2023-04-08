@@ -47,7 +47,6 @@ let layerConfigurations = [
             { name: "Asher Bible", trait: "Bible" },
             { name: "Asher Crosses", trait: "Cross" },
             { name: "Verse" },
-            { name: "Baptized", trait: "Rarity" },
         ],
     },
     {
@@ -58,7 +57,6 @@ let layerConfigurations = [
             { name: "Benjamin Bible", trait: "Bible" },
             { name: "Benjamin Crosses", trait: "Cross" },
             { name: "Verse" },
-            { name: "Baptized", trait: "Rarity" },
         ],
     },
     {
@@ -69,7 +67,6 @@ let layerConfigurations = [
             { name: "Gad Bible", trait: "Bible" },
             { name: "Gad Crosses", trait: "Cross" },
             { name: "Verse" },
-            { name: "Baptized", trait: "Rarity" },
         ],
     },
     {
@@ -80,7 +77,6 @@ let layerConfigurations = [
             { name: "Issachar Bible", trait: "Bible" },
             { name: "Issachar Crosses", trait: "Cross" },
             { name: "Verse" },
-            { name: "Baptized", trait: "Rarity" },
         ],
     },
     {
@@ -91,7 +87,6 @@ let layerConfigurations = [
             { name: "Joseph Bible", trait: "Bible" },
             { name: "Joseph Crosses", trait: "Cross" },
             { name: "Verse" },
-            { name: "Baptized", trait: "Rarity" },
         ],
     },
     {
@@ -102,7 +97,6 @@ let layerConfigurations = [
             { name: "Judah Bible", trait: "Bible" },
             { name: "Judah Crosses", trait: "Cross" },
             { name: "Verse" },
-            { name: "Baptized", trait: "Rarity" },
         ],
     },
     {
@@ -113,7 +107,6 @@ let layerConfigurations = [
             { name: "Levi Bible", trait: "Bible" },
             { name: "Levi Crosses", trait: "Cross" },
             { name: "Verse" },
-            { name: "Baptized", trait: "Rarity" },
         ],
     },
     {
@@ -124,7 +117,6 @@ let layerConfigurations = [
             { name: "Manasseh Bible", trait: "Bible" },
             { name: "Manasseh Crosses", trait: "Cross" },
             { name: "Verse" },
-            { name: "Baptized", trait: "Rarity" },
         ],
     },
     {
@@ -135,7 +127,6 @@ let layerConfigurations = [
             { name: "Naphtali Bible", trait: "Bible" },
             { name: "Naphtali Crosses", trait: "Cross" },
             { name: "Verse" },
-            { name: "Baptized", trait: "Rarity" },
         ],
     },
     {
@@ -146,7 +137,6 @@ let layerConfigurations = [
             { name: "Reuben Bible", trait: "Bible" },
             { name: "Reuben Crosses", trait: "Cross" },
             { name: "Verse" },
-            { name: "Baptized", trait: "Rarity" },
         ],
     },
     {
@@ -157,7 +147,6 @@ let layerConfigurations = [
             { name: "Simeon Bible", trait: "Bible" },
             { name: "Simeon Crosses", trait: "Cross" },
             { name: "Verse" },
-            { name: "Baptized", trait: "Rarity" },
         ],
     },
     {
@@ -168,19 +157,15 @@ let layerConfigurations = [
             { name: "Zebulun Bible", trait: "Bible" },
             { name: "Zebulun Crosses", trait: "Cross" },
             { name: "Verse" },
-            { name: "Baptized", trait: "Rarity" },
         ],
     },
     {
-        growEditionSizeTo:
-            numBaptized + numAnointed - Math.floor(numAnointed / 12) * 11,
+        growEditionSizeTo: numBaptized + numAnointed,
         namePrefix: "CyberBibles",
         layersOrder: [
-            { name: "Background" },
-            { name: "Zebulun Bible", trait: "Bible" },
-            { name: "Zebulun Crosses", trait: "Cross" },
+            { name: "Anointed Background", trait: "Background" },
+            { name: "Anointed Bible", trait: "Bible" },
             { name: "Verse" },
-            { name: "Anointed", trait: "Rarity" },
         ],
     },
 ];
