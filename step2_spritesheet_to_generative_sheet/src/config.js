@@ -31,126 +31,144 @@ const {
     animationUri,
 } = require(path.join(basePath, "../global_config.json"));
 
+let numBaptized = 10260;
+let numAnointed = 1728;
+let numAscended = 12;
+
+// numBaptized - Math.floor(numBaptized / 12) * 11;
+
 /* ONLY VARIABLE THAT YOU NEED TO EDIT IS HERE */
 let layerConfigurations = [
     {
         growEditionSizeTo: totalSupply - Math.floor(totalSupply / 12) * 11,
-        namePrefix: "Baptized",
+        namePrefix: "CyberBibles",
         layersOrder: [
             { name: "Background" },
             { name: "Asher Bible", trait: "Bible" },
             { name: "Asher Crosses", trait: "Cross" },
             { name: "Verse" },
+            { name: "Baptized", trait: "Rarity" },
         ],
     },
     {
         growEditionSizeTo: totalSupply - Math.floor(totalSupply / 12) * 10,
-        namePrefix: "Baptized",
+        namePrefix: "CyberBibles",
         layersOrder: [
             { name: "Background" },
             { name: "Benjamin Bible", trait: "Bible" },
             { name: "Benjamin Crosses", trait: "Cross" },
             { name: "Verse" },
+            { name: "Baptized", trait: "Rarity" },
         ],
     },
     {
         growEditionSizeTo: totalSupply - Math.floor(totalSupply / 12) * 9,
-        namePrefix: "Baptized",
+        namePrefix: "CyberBibles",
         layersOrder: [
             { name: "Background" },
             { name: "Gad Bible", trait: "Bible" },
             { name: "Gad Crosses", trait: "Cross" },
             { name: "Verse" },
+            { name: "Baptized", trait: "Rarity" },
         ],
     },
     {
         growEditionSizeTo: totalSupply - Math.floor(totalSupply / 12) * 8,
-        namePrefix: "Baptized",
+        namePrefix: "CyberBibles",
         layersOrder: [
             { name: "Background" },
             { name: "Issachar Bible", trait: "Bible" },
             { name: "Issachar Crosses", trait: "Cross" },
             { name: "Verse" },
+            { name: "Baptized", trait: "Rarity" },
         ],
     },
     {
         growEditionSizeTo: totalSupply - Math.floor(totalSupply / 12) * 7,
-        namePrefix: "Baptized",
+        namePrefix: "CyberBibles",
         layersOrder: [
             { name: "Background" },
             { name: "Joseph Bible", trait: "Bible" },
             { name: "Joseph Crosses", trait: "Cross" },
             { name: "Verse" },
+            { name: "Baptized", trait: "Rarity" },
         ],
     },
     {
         growEditionSizeTo: totalSupply - Math.floor(totalSupply / 12) * 6,
-        namePrefix: "Baptized",
+        namePrefix: "CyberBibles",
         layersOrder: [
             { name: "Background" },
             { name: "Judah Bible", trait: "Bible" },
             { name: "Judah Crosses", trait: "Cross" },
             { name: "Verse" },
+            { name: "Baptized", trait: "Rarity" },
         ],
     },
     {
         growEditionSizeTo: totalSupply - Math.floor(totalSupply / 12) * 5,
-        namePrefix: "Baptized",
+        namePrefix: "CyberBibles",
         layersOrder: [
             { name: "Background" },
             { name: "Levi Bible", trait: "Bible" },
             { name: "Levi Crosses", trait: "Cross" },
             { name: "Verse" },
+            { name: "Baptized", trait: "Rarity" },
         ],
     },
     {
         growEditionSizeTo: totalSupply - Math.floor(totalSupply / 12) * 4,
-        namePrefix: "Baptized",
+        namePrefix: "CyberBibles",
         layersOrder: [
             { name: "Background" },
             { name: "Manasseh Bible", trait: "Bible" },
             { name: "Manasseh Crosses", trait: "Cross" },
             { name: "Verse" },
+            { name: "Baptized", trait: "Rarity" },
         ],
     },
     {
         growEditionSizeTo: totalSupply - Math.floor(totalSupply / 12) * 3,
-        namePrefix: "Baptized",
+        namePrefix: "CyberBibles",
         layersOrder: [
             { name: "Background" },
             { name: "Naphtali Bible", trait: "Bible" },
             { name: "Naphtali Crosses", trait: "Cross" },
             { name: "Verse" },
+            { name: "Baptized", trait: "Rarity" },
         ],
     },
     {
         growEditionSizeTo: totalSupply - Math.floor(totalSupply / 12) * 2,
-        namePrefix: "Baptized",
+        namePrefix: "CyberBibles",
         layersOrder: [
             { name: "Background" },
             { name: "Reuben Bible", trait: "Bible" },
             { name: "Reuben Crosses", trait: "Cross" },
             { name: "Verse" },
+            { name: "Baptized", trait: "Rarity" },
         ],
     },
     {
         growEditionSizeTo: totalSupply - Math.floor(totalSupply / 12) * 1,
-        namePrefix: "Baptized",
+        namePrefix: "CyberBibles",
         layersOrder: [
             { name: "Background" },
             { name: "Simeon Bible", trait: "Bible" },
             { name: "Simeon Crosses", trait: "Cross" },
             { name: "Verse" },
+            { name: "Baptized", trait: "Rarity" },
         ],
     },
     {
         growEditionSizeTo: totalSupply - Math.floor(totalSupply / 12) * 0,
-        namePrefix: "Baptized",
+        namePrefix: "CyberBibles",
         layersOrder: [
             { name: "Background" },
             { name: "Zebulun Bible", trait: "Bible" },
             { name: "Zebulun Crosses", trait: "Cross" },
             { name: "Verse" },
+            { name: "Baptized", trait: "Rarity" },
         ],
     },
 ];
