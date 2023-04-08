@@ -319,7 +319,7 @@ const addMetadata = (_dna, _edition, _prefixData, attributesList) => {
         date: dateTime,
         ...extraMetadata,
         attributes: cleanedAttrs,
-        compiler: "Jalagar Animated Art Engine",
+        // compiler: "Jalagar Animated Art Engine",
     };
     // If generating thumbnail, replace image with thumbnail URI
     // and animation with baseUri
@@ -790,7 +790,7 @@ const outputFiles = (
     attributesList,
     canvas
 ) => {
-    console.log("abstractedIndexes: ", abstractedIndexes);
+    console.log("abstractedIndexes[0]: ", abstractedIndexes[0]);
     const { newDna, _ } = layerData;
     // Save the canvas buffer to file
     saveImage(abstractedIndexes[0], canvas);

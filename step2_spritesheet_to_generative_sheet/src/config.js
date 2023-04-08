@@ -239,7 +239,7 @@ layerConfigurations = layerConfigurationMapping[layersFolder];
  * Set to true for when using multiple layersOrder configuration
  * and you would like to shuffle all the artwork together
  */
-const shuffleLayerConfigurations = true;
+const shuffleLayerConfigurations = false;
 
 const debugLogs = debug;
 
