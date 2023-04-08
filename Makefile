@@ -11,6 +11,10 @@ step2:
 step3:
 	python3 step3_generative_sheet_to_output/build.py
 
+finish:
+	cd step2_spritesheet_to_generative_sheet && npm run generate && cd ..
+	python3 step3_generative_sheet_to_output/build.py
+
 all:
 	python3 all.py
 
