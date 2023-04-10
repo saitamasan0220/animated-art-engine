@@ -790,7 +790,7 @@ const outputFiles = (
     attributesList,
     canvas
 ) => {
-    console.log("abstractedIndexes[0]: ", abstractedIndexes[0]);
+    // console.log("abstractedIndexes[0]: ", abstractedIndexes[0]);
     const { newDna, _ } = layerData;
     // Save the canvas buffer to file
     saveImage(abstractedIndexes[0], canvas);
@@ -810,13 +810,13 @@ const outputFiles = (
     attributesList.length = 0;
 
     saveMetaDataSingleFile(abstractedIndexes[0], metadata);
-    console.log(
-        chalk.cyan(
-            `Created edition: ${abstractedIndexes[0]}, with DNA: ${hash(
-                newDna
-            )}`
-        )
-    );
+    // console.log(
+    //     chalk.cyan(
+    //         `Created edition: ${abstractedIndexes[0]}, with DNA: ${hash(
+    //             newDna
+    //         )}`
+    //     )
+    // );
 };
 
 const startCreating = async (
@@ -912,7 +912,13 @@ const startCreating = async (
                 const filteredDna = filterDNAOptions(newDna);
                 dnaSet.add(filteredDna);
                 dnaList[abstractedIndexes[0] - startIndex] = filteredDna;
+                console.log(
+                    `${editionCount} spritesheets made, ${
+                        11988 - editionCount
+                    } remaining`
+                );
                 editionCount++;
+
                 abstractedIndexes.shift();
             } else {
                 console.log(chalk.bgRed("DNA exists!"));

@@ -31,12 +31,12 @@ const {
     animationUri,
 } = require(path.join(basePath, "../global_config.json"));
 
-// let numBaptized = 10260;
-// let numAnointed = 1728;
-let numBaptized = 24;
-let numAnointed = 24;
+let numBaptized = 10260;
+let numAnointed = 1728;
+// let numBaptized = 24;
+// let numAnointed = 12;
 
-let numAscended = 12;
+// let numAscended = 12;
 
 // numBaptized - Math.floor(numBaptized / 12) * 11;
 
