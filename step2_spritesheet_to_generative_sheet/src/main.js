@@ -314,8 +314,8 @@ const addMetadata = (_dna, _edition, _prefixData, attributesList) => {
         name: `${_prefix ? _prefix + " " : ""}#${_edition - _offset}`,
         description: description,
         image: `${baseUri}/${_edition}.${outputType}`,
-        imageName: `${_edition}.${outputType}`, // Used by the provenance hash
-        edition: _edition,
+        // imageName: `${_edition}.${outputType}`, // Used by the provenance hash
+        // edition: _edition,
         // date: dateTime,
         ...extraMetadata,
         attributes: cleanedAttrs,

@@ -33,8 +33,8 @@ const {
 
 // let numBaptized = 10260;
 // let numAnointed = 1728;
-let numBaptized = 12;
-let numAnointed = 12;
+let numBaptized = 24;
+let numAnointed = 24;
 
 let numAscended = 12;
 
@@ -50,6 +50,7 @@ let layerConfigurations = [
             { name: "Asher Bible", trait: "Bible" },
             { name: "Asher Crosses", trait: "Cross" },
             { name: "Verse" },
+            { name: "Baptized", trait: "Rarity" },
         ],
     },
     {
@@ -60,6 +61,7 @@ let layerConfigurations = [
             { name: "Benjamin Bible", trait: "Bible" },
             { name: "Benjamin Crosses", trait: "Cross" },
             { name: "Verse" },
+            { name: "Baptized", trait: "Rarity" },
         ],
     },
     {
@@ -70,6 +72,7 @@ let layerConfigurations = [
             { name: "Gad Bible", trait: "Bible" },
             { name: "Gad Crosses", trait: "Cross" },
             { name: "Verse" },
+            { name: "Baptized", trait: "Rarity" },
         ],
     },
     {
@@ -80,6 +83,7 @@ let layerConfigurations = [
             { name: "Issachar Bible", trait: "Bible" },
             { name: "Issachar Crosses", trait: "Cross" },
             { name: "Verse" },
+            { name: "Baptized", trait: "Rarity" },
         ],
     },
     {
@@ -90,6 +94,7 @@ let layerConfigurations = [
             { name: "Joseph Bible", trait: "Bible" },
             { name: "Joseph Crosses", trait: "Cross" },
             { name: "Verse" },
+            { name: "Baptized", trait: "Rarity" },
         ],
     },
     {
@@ -100,6 +105,7 @@ let layerConfigurations = [
             { name: "Judah Bible", trait: "Bible" },
             { name: "Judah Crosses", trait: "Cross" },
             { name: "Verse" },
+            { name: "Baptized", trait: "Rarity" },
         ],
     },
     {
@@ -110,6 +116,7 @@ let layerConfigurations = [
             { name: "Levi Bible", trait: "Bible" },
             { name: "Levi Crosses", trait: "Cross" },
             { name: "Verse" },
+            { name: "Baptized", trait: "Rarity" },
         ],
     },
     {
@@ -120,6 +127,7 @@ let layerConfigurations = [
             { name: "Manasseh Bible", trait: "Bible" },
             { name: "Manasseh Crosses", trait: "Cross" },
             { name: "Verse" },
+            { name: "Baptized", trait: "Rarity" },
         ],
     },
     {
@@ -130,6 +138,7 @@ let layerConfigurations = [
             { name: "Naphtali Bible", trait: "Bible" },
             { name: "Naphtali Crosses", trait: "Cross" },
             { name: "Verse" },
+            { name: "Baptized", trait: "Rarity" },
         ],
     },
     {
@@ -140,6 +149,7 @@ let layerConfigurations = [
             { name: "Reuben Bible", trait: "Bible" },
             { name: "Reuben Crosses", trait: "Cross" },
             { name: "Verse" },
+            { name: "Baptized", trait: "Rarity" },
         ],
     },
     {
@@ -150,6 +160,7 @@ let layerConfigurations = [
             { name: "Simeon Bible", trait: "Bible" },
             { name: "Simeon Crosses", trait: "Cross" },
             { name: "Verse" },
+            { name: "Baptized", trait: "Rarity" },
         ],
     },
     {
@@ -160,6 +171,7 @@ let layerConfigurations = [
             { name: "Zebulun Bible", trait: "Bible" },
             { name: "Zebulun Crosses", trait: "Cross" },
             { name: "Verse" },
+            { name: "Baptized", trait: "Rarity" },
         ],
     },
     {
@@ -169,8 +181,18 @@ let layerConfigurations = [
             { name: "Anointed Background", trait: "Background" },
             { name: "Anointed Bible", trait: "Bible" },
             { name: "Verse" },
+            { name: "Anointed", trait: "Rarity" },
         ],
     },
+    // {
+    //     growEditionSizeTo: numBaptized + numAnointed + numAscended,
+    //     namePrefix: "CyberBibles",
+    //     layersOrder: [
+    //         { name: "Ascended Bible", trait: "Bible" },
+    //         { name: "Verse" },
+    //         { name: "Ascended", trait: "Rarity" },
+    //     ],
+    // },
 ];
 
 const format = {
@@ -257,7 +279,7 @@ layerConfigurations = layerConfigurationMapping[layersFolder];
  * Set to true for when using multiple layersOrder configuration
  * and you would like to shuffle all the artwork together
  */
-const shuffleLayerConfigurations = false;
+const shuffleLayerConfigurations = true;
 
 const debugLogs = debug;
 
@@ -305,7 +327,9 @@ const traitValueOverrides = {
     // "gold chain": "GOLDEN NECKLACE",
 };
 
-const extraMetadata = {};
+const extraMetadata = {
+    text: "ipfs://WEBUriToReplace",
+};
 
 const extraAttributes = () => [
     // Optionally, if you need to overwrite one of your layers attributes.
