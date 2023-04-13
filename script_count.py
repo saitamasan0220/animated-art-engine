@@ -52,6 +52,9 @@ print("# remaining indexes: ", len(indexes))
 def rec_dd(): return defaultdict(rec_dd)
 
 
+baptized_count = 0
+anointed_count = 0
+
 table = rec_dd()
 path = 'build/json/'
 for filename in os.listdir(path):
@@ -101,8 +104,9 @@ for filename in os.listdir(path):
             #     "Verse": Verse
             # }
             table[Background][Bible][Cross][Verse] = True
-            # print("table[{}][{}][{}][{}]: {}".format(Background, Bible, Cross, Verse,
-            #  table[Background][Bible][Cross][Verse]))
+            print("table[{}][{}][{}][{}]: {}".format(Background, Bible, Cross, Verse,
+                                                     table[Background][Bible][Cross][Verse]))
+            baptized_count += 1
         elif Rarity == "Anointed":
             # table["Background"] = {
             #     "value": Background,
@@ -110,7 +114,15 @@ for filename in os.listdir(path):
             #     "Verse": Verse
             # }
             table[Background][Bible][Verse] = True
-            # print("table[{}][{}][{}]: {}".format(Background, Bible, Verse,
-            #                                      table[Background][Bible][Verse]))
+            print("table[{}][{}][{}]: {}".format(Background, Bible, Verse,
+                                                 table[Background][Bible][Verse]))
+            anointed_count += 1
+
+
+print("baptized_count: ", baptized_count)
+print("anointed_count: ", anointed_count)
+
+with open('table.json', 'w') as json_file:
+    json.dump(table, json_file)
 
 print("done")
