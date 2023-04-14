@@ -6,19 +6,6 @@ from random import shuffle
 
 import random
 
-# random_indexes = random.sample(range(1, 11989), 12)
-# # random_indexes = [0] + random_indexes
-
-# random_map = {}
-# for random_index in random_indexes:
-#     for ascended_index in range(11989, 12001):
-#         random_map[random_index] = ascended_index
-#         random_map[ascended_index] = random_index
-
-# for i, arg in enumerate(sys.argv):
-#     print(f"Argument {i:>6}: {arg}")
-
-
 arg1 = int(sys.argv[1])
 arg2 = int(sys.argv[2])
 
@@ -28,7 +15,7 @@ random_map = {
 }
 
 
-path = 'build/random/gif/'
+path = 'ascended/gif/'
 for filename in (os.listdir(path)):
     map_index = int(filename.replace('.gif', ''))
     if map_index in random_map:
@@ -45,7 +32,7 @@ for filename in os.listdir(path):
     os.rename(my_source, my_dest)
 
 
-path = 'build/random/json/'
+path = 'ascended/json/'
 for filename in os.listdir(path):
     map_index = int(filename.replace('.json', ''))
     if map_index in random_map:
@@ -59,7 +46,7 @@ for filename in os.listdir(path):
     os.rename(my_source, my_dest)
 
 
-with os.scandir('build/random/json/') as directory:
+with os.scandir('ascended/json/') as directory:
     for item in directory:
         if item.is_file():
             with open(item, mode="r+") as file:
@@ -68,5 +55,10 @@ with os.scandir('build/random/json/') as directory:
                 regex = re.compile('\d+.gif')
                 new_name = item.name.replace('.json', '.gif')
                 file_text = regex.sub(f'{new_name}', file_text)
+
+                regex = re.compile('#\d+')
+                new_name = '#' + item.name.replace('.json', '')
+                file_text = regex.sub(f'{new_name}', file_text)
+
                 file.seek(0)
                 file.write(file_text)

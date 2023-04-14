@@ -1,0 +1,21 @@
+{
+    "name": "CyberBibles #11996",
+    "description": "CyberBibles is a project aimed at preserving the Bible's integrity, creating a community focused on manifesting the supernatural in the digital realm, and establishing God's Kingdom in every Metaverse. The project stores the entire Old & New Testament on the Blockchain through NFTs, which guarantees that nobody can alter or erase any of the content. The community is dedicated to digital evangelism, owning land and assets in the Metaverse to establish a Kingdom presence. CyberBibles also offers an immersive prophetic fiction through the CyberBibles web series. Your Bible can be read off of IPFS at https://tinyurl.com/cyberbible.",
+    "text": "ipfs://WEBUriToReplace",
+    "image": "ipfs://NewUriToReplace/11996.gif",
+
+    "attributes": [
+        {
+            "trait_type": "Bible",
+            "value": "Nathanael"
+        },
+        {
+            "trait_type": "Verse",
+            "value": "Luke 19:10"
+        },
+        {
+            "trait_type": "Rarity",
+            "value": "Ascended"
+        }
+    ]
+}

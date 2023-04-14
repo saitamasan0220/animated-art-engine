@@ -6,7 +6,6 @@ from random import shuffle
 import random
 
 random_indexes = random.sample(range(8, 11989), 12)
-# random_indexes = [0] + random_indexes
 
 random_map = {}
 for random_index in random_indexes:
