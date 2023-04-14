@@ -15,7 +15,7 @@ random_map = {
 }
 
 
-path = 'ascended/gif/'
+path = 'build/gif/'
 for filename in (os.listdir(path)):
     map_index = int(filename.replace('.gif', ''))
     if map_index in random_map:
@@ -32,7 +32,7 @@ for filename in os.listdir(path):
     os.rename(my_source, my_dest)
 
 
-path = 'ascended/json/'
+path = 'build/json/'
 for filename in os.listdir(path):
     map_index = int(filename.replace('.json', ''))
     if map_index in random_map:
@@ -46,9 +46,9 @@ for filename in os.listdir(path):
     os.rename(my_source, my_dest)
 
 
-with os.scandir('ascended/json/') as directory:
+with os.scandir('build/json/') as directory:
     for item in directory:
-        if item.is_file():
+        if item.is_file() and int(item.name.replace('.json', '')) in random_map:
             with open(item, mode="r+") as file:
 
                 file_text = file.read()
@@ -62,3 +62,6 @@ with os.scandir('ascended/json/') as directory:
 
                 file.seek(0)
                 file.write(file_text)
+                file.close()
+
+print("done")

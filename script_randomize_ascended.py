@@ -5,11 +5,11 @@ from random import shuffle
 
 import random
 
-random_indexes = random.sample(range(8, 11989), 12)
+random_indexes = random.sample(range(1, 11989), 12)
 
 random_map = {}
 for random_index in random_indexes:
-    for ascended_index in range(11990, 12001):
+    for ascended_index in range(11989, 12000):
         random_map[random_index] = ascended_index
         random_map[ascended_index] = random_index
 
@@ -53,5 +53,10 @@ with os.scandir('build/random/json/') as directory:
                 regex = re.compile('\d+.gif')
                 new_name = item.name.replace('.json', '.gif')
                 file_text = regex.sub(f'{new_name}', file_text)
+
+                regex = re.compile('#\d+')
+                new_name = '#' + item.name.replace('.json', '')
+                file_text = regex.sub(f'{new_name}', file_text)
+
                 file.seek(0)
                 file.write(file_text)
